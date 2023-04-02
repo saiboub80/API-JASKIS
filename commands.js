@@ -60,3 +60,11 @@ db.bounties.deleteMany({client:'Songbird'})
 db.bounties.updateMany({},
     { $set: { captured: true } }
   )
+
+  Bonus: The Scavengers
+ new collections call  Scavengers
+ db.createCollection("scavengers")
+insertMany Data
+db.scavengers.insertMany()
+find date after 2011-12-31
+db.scavengers.find( { joined: { $gte: new Date('2011-12-31') } } )
